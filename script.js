@@ -32,6 +32,7 @@ function rmv(){
                     let item = document.createElement('option')
                     item.text = `Valor ${num} removido`
                     lista.appendChild(item)
+                    res.innerHTML =''
                     lista.size++
                 }
             }
