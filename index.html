@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de números</h1>
+    </header>
+
+    <section>
+        <div>
+            Selecione valores de 1 a 100
+            <input type="number" name="txtnum" id="txtnum">
+            <input type="button" value="Add" id ='add' onclick="add()" onkeypress="add()">
+            <input type="button" value="rmv" id ='rmv' onclick="rmv()" onkeypress="rmv()">
+            <br><br>
+            <select name="lista" id="lista" size = '1'>
+            </select>
+            <br>
+            <input type="button" value="Analisar" onclick="analisa()">
+        </div>
+
+        <div id = 'res'>
+            
+        </div>
+
+        <div>
+            <input type="button" value="Resetar" id='reset' onclick="reseta()">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;Lamenkazu</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
